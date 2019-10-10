@@ -1,3 +1,265 @@
 * {
     box-sizing: border-box;
+    font-family: 'Heebo', sans-serif;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    padding-top: 160px;
+    padding-bottom: 100px;
+}
+
+main {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+article main {
+    width: 100%;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 40px;
+    display: inline-block;
+    margin: 0;
+    letter-spacing: -1px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: -1px;
+    padding: 0;
+    margin: 0;
+}
+
+#about h3 {
+    color: black;
+}
+
+#about p {
+    margin-bottom: 0;
+    margin-top: 15px;
+    letter-spacing: -0.75px;
+}
+
+#projects h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+h4 {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    letter-spacing: -1px;
+}
+
+li i {
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+p {
+    font-size: 20px;
+    letter-spacing: -0.5px;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+.fa-js {
+    color: gold;
+}
+
+.fa-html5 {
+    color: orangered;
+}
+
+.fa-css3-alt {
+    color: royalblue;
+}
+
+.primary-nav {
+    background-color: white;
+    display: block;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 -1px 4px 0
+}
+
+.primary-nav ul {
+    margin-bottom: 10px;
+    align-content: center;
+}
+
+.primary-nav ul li {
+    font-size: 25px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 10px;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    border-top: 10px solid black;
+}
+
+.project-card figcaption {
+    display: inline-block;
+    font-size: 19px;
+    font-weight: 700;
+    color: rgb(140, 121, 83);
+}
+
+.project-card_threelies aside {
+    font-family: 'Chivo', sans-serif;
+    letter-spacing: -1.5px;
+    font-size: 25px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.project-card_threelies p {
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.project-card_threelies button {
+    font-family: 'Chivo', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 900;
+    font-size: 40px;
+    letter-spacing: -1px;
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    color: white;
+    background-color: black;
+    border: none;
+    width: 100%;
+}
+
+.project-name_threelies, .project-name_threelies a {
+    font-family: 'Chivo', sans-serif;
+    text-align: left;
+    letter-spacing: -3px;
+    font-size: 58px;
+    font-weight: 900;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    line-height: 90%;
+}
+
+.primary-footer {
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 1px 4px 0;
+    padding: 20px;
+}
+
+.primary-footer ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: black;
+}
+
+.primary-footer i {
+    font-size: 23px;
+    padding: 0;
+    margin: 0;
+}
+
+/* MEDIA QUERIES */
+
+
+/* TABLET */
+@media screen and (min-width: 720px) {
+
+    h1 {
+        font-size: 40px;
+        padding-left: 20px;
+        margin-bottom: 0;
+    }
+
+    .primary-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .primary-nav ul {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        margin-bottom: 0;
+    }
+
+    .primary-nav ul li {
+        font-size: 30px;
+        font-weight: 600;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-right: 2vw;
+        padding-left: 0;
+    }
+
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1024px) {
+
+    .primary-nav {
+        padding: 20px;
+    }
+    
+
 }

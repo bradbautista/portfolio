@@ -4,17 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="styles.css" rel="stylesheet">
     <title>Brad Bautista</title>
+    <!-- normalize -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <!-- ours -->
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Chivo:300, 300i, 400, 400i,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800,900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Heebo:100,300,400,500,700,800,900&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/b7241d4776.js" crossorigin="anonymous"></script>    
 </head>
 
 <body>
 
+<header>
+    <nav class="primary-nav">
+        <h1>Brad Bautista</h1>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="about">
+    <article class="about-me">
+        <h3>About me</h3>
+        <p>Hi! My name is Brad. I'm a web developer enrolled in the full-stack engineering program at Thinkful.</p>
+        <p>I try to make neat things and I try to make things neat. I have a passion for solving problems, and for learning new ways to solve them.</p>
+        <p>When I'm not building neat things, I'm climbing on them.</p>
+        <p>Got a mountain to scale? I can help you get to the top.</p>
+    </article>
+    </section>
+
+    <section id="projects">
+        <h3>Projects</h3>
+        <article class="project-card project-card_threelies">
+            <header>
+            <h4 class="project-name project-name_threelies"><a href="https://github.com/bradbautista/quizapp">Three Lies and the Truth</a></h4>
+            <aside>A quick quiz about the ridiculousness of reality.</aside>
+            </header>
+            <main>
+                <p>This app was built over two days as a project for Thinkful's engineering curriculum. Randomization and short play sessions give it replay value, and it's built to scale easily. Click the title above for the repo, or click the button to play.</p>
+                <a href="https://bradbautista.github.io/quizapp/" target="_blank"><button>PLAY</button></a>
+                <figure>
+                    <figcaption>
+                    TECH
+                    </figcaption>
+                    <ul>
+                        <li><i class="fab fa-js"></i></li>
+                        <li><i class="fab fa-html5"></i><li>
+                        <li><i class="fab fa-css3-alt"></i></li>
+                    </ul>
+                </figure>
+            </main>
+                
+            </details>
+        </article>
+    </section>
+    <section id="contact"></section>
+</main>
 
 
 
 
 
+<footer class="primary-footer">
+    <ul>
+        <a href="https://github.com/bradbautista"><li><i class="fab fa-github"></i></li></a>
+        <a href="mailto:bradbautista@gmail.com?subject=A wild message appears!"><li><i class="fas fa-envelope"></i></li></a>
+        <a href="https://www.linkedin.com/in/bradford-bautista/"><li><i class="fab fa-linkedin-in"></i></li></a>
+    </ul>
+</footer>
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<!-- ours -->
 <script src="script.js"></script>
 </body>
 </html>
