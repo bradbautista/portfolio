@@ -10,11 +10,10 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
     <!-- ours -->
     <link href="styles.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Chivo:300,300i,400,400i,700,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Heebo:100,300,400,500,700,800,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,700,800,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,200,300,400,500,700,800,900&display=swap" rel="stylesheet">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Chivo:300,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:200,300,400&display=swap" rel="stylesheet">
     <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/b7241d4776.js" crossorigin="anonymous"></script>    
 </head>
@@ -27,59 +26,68 @@
         <ul>
             <li><a href="#">About</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#doodles">Doodles</a></li>
+            <!-- <li><a href="#doodles">Doodles</a></li> -->
         </ul>
     </nav>
 </header>
 
 <main>
     <section id="about">
-    <article class="about-me">
-        <h3>About me</h3>
-        <p>Hi! My name is Brad. I'm a web developer enrolled in the full-stack engineering program at Thinkful.</p>
-        <p>I try to make neat things and I try to make things neat. I have a passion for solving problems, and for learning new ways to solve them.</p>
-        <p>When I'm not building neat things, I'm figuring out how to climb up them. Got a mountain to scale? I can help you get to the top.</p>
-    </article>
+        <article class="about-me">
+            <h3>About me</h3>
+            <p>Hi! My name is Brad. I'm a web developer enrolled in the full-stack engineering program at Thinkful.</p>
+            <p>I try to make neat things and I try to make things neat. I have a passion for solving problems, and for learning new ways to solve them.</p>
+            <p>When I'm not building neat things, I'm figuring out how to climb up them. Got a mountain to scale? I can help you get to the top.</p>
+        </article>
     </section>
 
     <section id="projects">
         <h3>Projects</h3>
         <article class="project-card project-card_threelies">
-            <header>
-            <h4 class="project-name project-name_threelies"><a href="https://github.com/bradbautista/quizapp" target="_blank">Three Lies and the Truth</a></h4>
-            <aside>A quick quiz about the ridiculousness of reality.</aside>
-            </header>
-            <section class="project-description">
-                <p>This app was built over two days as a project for Thinkful's engineering curriculum. Randomization and short play sessions give it replay value, and it's built to scale easily.</p>
-                <a href="https://bradbautista.github.io/quizapp/" class="playbutton" target="_blank">PLAY</a>
-                <section class="tech">
-                    <figure>
-                        <figcaption>
-                        TECH
-                        </figcaption>
-                        <ul>
-                            <li><i class="fab fa-js"></i></li>
-                            <li><i class="fab fa-html5"></i></li>
-                            <li><i class="fab fa-css3-alt"></i></li>
-                        </ul>
-                    </figure>
-                    <figure>
-                        <figcaption>
-                        CODE
-                        </figcaption>
-                        <ul>
-                            <li><a href="https://github.com/bradbautista/quizapp" target="_blank" tabindex="0"><i class="fab fa-github"></i></a></li>
-                            <li><a href="https://bradbautista.github.io/quizapp/" target="_blank"><i class="fas fa-rocket"></i></a></li>
-                        </ul>
-                    </figure>
-                </section>
+            
+            <section class="project-card-art project-card-art_threelies">
+                <a href="https://bradbautista.github.io/quizapp/" class="playbutton playbutton-desktop" target="_blank">PLAY</a>
+            </section>
+            
+            <section class="project-card-body project-card-body_threelies">
+                
+                <header>
+                    <h4 class="project-name project-name_threelies"><a href="https://github.com/bradbautista/quizapp" target="_blank">Three Lies and the Truth</a></h4>
+                    <aside>A quick quiz about the ridiculousness of reality.</aside>
+                </header>
+                
+                <section class="project-description project-description_threelies">
+                    <p>This app was built over two days as a project for Thinkful's engineering curriculum. Randomization and short play sessions give it replay value, and it's built to scale easily.</p>
+                    <a href="https://bradbautista.github.io/quizapp/" class="playbutton playbutton-mobile" target="_blank">PLAY</a>
+                    <section class="tech">
+                        <figure>
+                            <figcaption>
+                            TECH
+                            </figcaption>
+                            <ul>
+                                <li><i class="fab fa-js"></i></li>
+                                <li><i class="fab fa-html5"></i></li>
+                                <li><i class="fab fa-css3-alt"></i></li>
+                            </ul>
+                        </figure>
+                        <figure>
+                            <figcaption>
+                            CODE
+                            </figcaption>
+                            <ul>
+                                <li><a href="https://github.com/bradbautista/quizapp" target="_blank" tabindex="0"><i class="fab fa-github"></i></a></li>
+                                <li><a href="https://bradbautista.github.io/quizapp/" target="_blank"><i class="fas fa-rocket"></i></a></li>
+                            </ul>
+                        </figure>
+                    </section>
 
+                </section>
             </section>
                 
         </article>
     </section>
 
-    <section id="doodles">
+    <!-- <section id="doodles">
         <h3>Doodles</h3>
         <section class="doodleboard">
 
@@ -118,11 +126,8 @@
             </article>
 
         </section>
-    </section>
+    </section> -->
 </main>
-
-
-
 
 
 <footer class="primary-footer">

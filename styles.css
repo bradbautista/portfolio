@@ -214,6 +214,10 @@ figure ul:first-of-type {
     width: 100%;
 }
 
+.playbutton-desktop {
+    display: none;
+}
+
 .project-name_threelies, .project-name_threelies a {
     font-family: 'Chivo', sans-serif;
     text-align: left;
@@ -367,7 +371,6 @@ figure ul:first-of-type {
         width: 47%;
     }
     
-
 }
 
 /* DESKTOP */
@@ -380,6 +383,7 @@ figure ul:first-of-type {
     #about p {
         font-size: 23px;
         line-height: 120%;
+        width: 100%;
         letter-spacing: -0.5px;
     }
 
@@ -388,16 +392,59 @@ figure ul:first-of-type {
         letter-spacing: -0.5px;
     }
 
+    #projects h3 {
+        margin-top: 30px;
+    }
+
+    .project-card_threelies {
+        flex-direction: row;
+        justify-content: space-between;
+        padding-bottom: 20px;
+    }
+
+    .project-card-art_threelies {
+        width: 49%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
     .project-card_threelies aside {
         font-size: 30px;
     }
 
-    .project-card_threelies button {
-        height: 200px;
+    .playbutton-mobile {
+        display: none;
+    }
+
+    .playbutton-desktop {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 70px;
+        height: 100%;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+
+    .project-card-body_threelies {
+        width: 49%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .project-card-body_threelies .tech ul {
+        margin-bottom: 0;
     }
 
     /* THIS LOOKS WEIRD WITH JUST TWO CHILDREN BUT LOOKS OK
     WITH 3 AND AS INTENDED WITH 4+, SO I'LL WAIT TO ADD MORE =) */
+
+    #doodles h3 {
+        margin-top: 30px;
+    }
 
     #doodles .tech {
         flex-direction: row;
