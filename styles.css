@@ -1,3 +1,12 @@
+:root {
+    --gifchat-primary: #ffd75f;
+    --gifchat-secondary: #6b5fb5;
+    --gifchat-tertiary: #39cccc;
+    --gifchat-quaternary: rgb(130, 224, 255);
+    --gifchat-quinary: lemonchiffon;
+    --gifchat-senary: #e4e1f1;
+  }
+
 * {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
@@ -14,13 +23,18 @@ a {
     color: black;
 }
 
+strong {
+    font-weight: 900;
+    font-family: inherit;
+}
+
 body {
     padding-top: 160px;
     padding-bottom: 100px;
 }
 
 main {
-    width: 75%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -63,8 +77,9 @@ h4 {
     margin-top: 15px;
     letter-spacing: -0.75px;
     font-family: 'Roboto Slab', serif;
-    font-size: 21px;
+    font-size: 22px;
     font-weight: 300;
+    line-height: 27px;
 }
 
 img {
@@ -93,6 +108,10 @@ p {
     letter-spacing: -0.5px;
 }
 
+/* ****************************************
+*******************************************
+******************************************* */
+
 figure {
     margin: 0;
     padding: 0;
@@ -103,6 +122,30 @@ figure {
 
 figure ul:first-of-type {
     margin-bottom: 9px;
+}
+
+.fa-react {
+    color: darkturquoise;
+}
+
+.socketio-logo {
+    margin-top: 0.5px;
+    height: 18px;
+    width: 18px;
+    margin-left: 10px;
+}
+
+.postgres-logo {
+    margin-top: 0.5px;
+    height: 18px;
+    width: 18px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.fa-node-js {
+    color: darkgreen;
+    font-size: 110%;
 }
 
 .fa-js {
@@ -117,9 +160,24 @@ figure ul:first-of-type {
     color: royalblue;
 }
 
+.fa-desktop {
+    font-size: 18px;
+    color: black;
+}
+
+.fa-server {
+    font-size: 18px;
+    color: black;
+}
+
 .fa-rocket {
     color: red;
+    font-size: 18px;
 }
+
+/* ****************************************
+*******************************************
+******************************************* */
 
 .primary-nav {
     background-color: white;
@@ -165,18 +223,80 @@ figure ul:first-of-type {
     width: 100%;
 }
 
-.project-card_apiary {
-    padding-top: 20px;
+/* ****************************************
+*******************************************
+******************************************* */
+
+.project-card_gifchat {
+    padding: 35px;
     flex-direction: column;
-    border-top: 1px solid #ffb345;
+    border: 3px solid var(--gifchat-secondary);
+    margin-bottom: 38px;
+    background: url('./images/noise2.png');
+    background-repeat: repeat;
+    background-color: var(--gifchat-primary);
+    box-shadow: 8px 8px var(--gifchat-quaternary)
 }
 
-/* .project-card-art_apiary {
+.project-card-art_gifchat {
     width: 100%;
-} */
+    margin-right: 0px;
+}
+
+.project-card-art_gifchat img {
+    height: 100%;
+    border: 1px solid var(--gifchat-secondary);
+    box-shadow: -5px -5px var(--gifchat-tertiary);
+}
+
+.project-name_gifchat {
+    text-indent: -12px;
+    font-size: 18vw;
+    line-height: 50px;
+    font-weight: 700;
+    margin: 0;
+    margin-top: 20px;
+    text-align: left;
+    letter-spacing: -12px;
+}
+
+.project-name_gifchat a {
+    font-family: 'Bungee Hairline';
+    color: var(--gifchat-secondary);
+    text-shadow: 1.5px 1.5px 0 var(--gifchat-primary), 3.5px 3.5px 0 var(--gifchat-tertiary);
+    margin: 0;
+    padding: 0;
+}
+
+.project-card_gifchat aside {
+    text-align: left;
+    margin-top: 15px;
+    font-size: 30px;
+    font-weight: 900;
+    font-family: 'Courier';
+    letter-spacing: -1px;
+}
+
+.project-card_gifchat p {
+    font-size: 20px;
+    margin-top: 5px;
+    font-family: 'Courier';
+}
+
+/* ****************************************
+*******************************************
+******************************************* */
+
+.project-card_apiary {
+    padding: 20px;
+    flex-direction: column;
+    border: 1px solid #ffb345;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
 
 .project-name_apiary {
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-size: 90px;
     font-weight: 700;
     margin: 0;
@@ -187,6 +307,7 @@ figure ul:first-of-type {
 
 .project-name_apiary a {
     color: #ffb345;
+    font-family: 'Roboto';
 }
 
 .project-card_apiary aside {
@@ -196,12 +317,26 @@ figure ul:first-of-type {
     font-weight: 200;
     font-style: italic;
     letter-spacing: -1px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .project-card_apiary p {
     font-size: 20px;
     margin-top: 15px;
+    font-family: 'Helvetica';
+    padding-left: 20px;
+    padding-right: 20px;
 }
+
+.project-description_apiary .tech {
+    padding-left: 20px;
+}
+
+/* ****************************************
+*******************************************
+******************************************* */
 
 .project-card_threelies {
     margin-top: 20px;
@@ -275,45 +410,9 @@ figure ul:first-of-type {
     justify-content: space-between;
 }
 
-#doodles h3 {
-    margin-top: 20px;
-    margin-bottom: 15px;
-    font-size: 40px;
-    letter-spacing: -1px;
-    font-weight: 400;
-    font-family: 'Roboto Slab', serif;
-}
-
-#doodles article h4 a {
-    font-family: 'Roboto Slab', serif;
-    font-size: 25px;
-    letter-spacing: -1px;
-    font-weight: 400;
-}
-
-#doodles p {
-    letter-spacing: -1px;
-    font-size: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.doodleboard {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-.doodleboard article {
-    width: 100%;
-    padding-bottom: 5px;
-    margin-bottom: 22px;
-    border-bottom: 1px solid silver;
-}
-
-.project-card_toast img {
-    margin-bottom: 10px;
-}
+/* ****************************************
+*******************************************
+******************************************* */
 
 .primary-footer {
     background-color: white;
@@ -379,15 +478,65 @@ figure ul:first-of-type {
         padding-left: 0;
     }
 
+    .project-card_gifchat {
+        padding: 80px;
+        margin-bottom: 58px;
+    }
+
+    .project-card-art_gifchat {
+        margin-bottom: 15px;
+    }
+
+    /* .project-card_gifchat {
+        flex-direction: column;
+        padding-top: 60px;
+        padding-bottom: 100px;
+    }
+
+    .project-card-art_gifchat {
+        width: 60%;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 30px;
+        border: 1px solid var(--gifchat-secondary);
+        box-shadow: -5px -5px var(--gifchat-tertiary);
+    } */
+
+    /* .project-description_gifchat, .gifchat-header {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    } */
+
+    .project-name_gifchat {
+        font-size: 13.2vw;
+        margin-bottom: 40px;
+        margin-top: 40px;
+    }
+
+    .project-card_apiary {
+        padding: 60px;
+        margin-bottom: 50px;
+    }
+
+    .project-description_apiary {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
     .project-name_apiary {
         text-align: center;
         font-size: 140px;
     }
 
+    .project-card_threelies {
+        padding: 30px;
+    }
+
     .project-name_threelies, .project-name_threelies a {
         letter-spacing: -3px;
         font-size: 88px;
-        margin-top: 20px;
+        margin-top: 0px;
         margin-bottom: 10px;
         line-height: 90%;
     }
@@ -401,25 +550,15 @@ figure ul:first-of-type {
     #projects .tech figure:nth-of-type(2n) {
         margin-left: 15px;
     }
-
-    #doodles .tech {
-        flex-direction: column;
-    }
-
-    .doodleboard {
-        justify-content: space-between;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    .doodleboard article {
-        width: 47%;
-    }
     
 }
 
 /* DESKTOP */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1200px) {
+
+    main {
+        width: 60%;
+    }
 
     .primary-nav {
         padding: 20px;
@@ -441,9 +580,66 @@ figure ul:first-of-type {
         margin-top: 30px;
     }
 
+    .project-card_gifchat {
+        padding: 80px;
+        flex-direction: row;
+        border: 3px solid var(--gifchat-secondary);
+        margin-bottom: 28px;
+        background: url('./images/noise2.png');
+        background-repeat: repeat;
+        background-color: var(--gifchat-primary);
+        box-shadow: 8px 8px var(--gifchat-quaternary)
+    }
+    
+    .project-card-art_gifchat {
+        width: 1600px;
+        margin-right: 50px;    
+    }
+    
+    .project-card-art_gifchat img {
+        height: 100%;
+    }
+    
+    .project-name_gifchat {
+        text-indent: -40px;
+        font-size: 180px;
+        line-height: 120px;
+        font-weight: 700;
+        margin: 0;
+        margin-top: 0px;
+        text-align: left;
+        letter-spacing: -40px;
+        margin-bottom: 30px;
+    }
+    
+    .project-name_gifchat a {
+        font-family: 'Bungee Hairline';
+        color: var(--gifchat-secondary);
+        text-shadow: 1.5px 1.5px 0 var(--gifchat-primary), 3.5px 3.5px 0 var(--gifchat-tertiary);
+        margin: 0;
+        padding: 0;
+    }
+    
+    .project-card_gifchat aside {
+        text-align: left;
+        margin-top: 15px;
+        font-size: 40px;
+        font-weight: 900;
+        font-family: 'Courier';
+        letter-spacing: -1px;
+    }
+    
+    .project-card_gifchat p {
+        font-size: 30px;
+        margin-top: 15px;
+        font-family: 'Courier';
+    }
+    
+
     .project-card_apiary {
         flex-direction: row;
         justify-content: space-between;
+        align-items: flex-start;
     }
 
     .project-card-art_apiary {
@@ -472,16 +668,22 @@ figure ul:first-of-type {
 
     .project-card_apiary aside {
         text-align: left;
+        margin-left: 0;
     }
 
     .project-card_apiary p {
-        width: 75%;
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .project-card_apiary .tech {
+        padding-left: 0;
     }
 
     .project-card_threelies {
         flex-direction: row;
         justify-content: space-between;
-        padding-bottom: 20px;
+        padding-bottom: 50px;
     }
 
     .project-card-art_threelies {
@@ -515,6 +717,7 @@ figure ul:first-of-type {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
+        margin-left: 50px;
     }
 
     .project-card-body_threelies .tech ul {
@@ -524,20 +727,8 @@ figure ul:first-of-type {
     /* THIS LOOKS WEIRD WITH JUST TWO CHILDREN BUT LOOKS OK
     WITH 3 AND AS INTENDED WITH 4+, SO I'LL WAIT TO ADD MORE =) */
 
-    #doodles h3 {
-        margin-top: 30px;
-    }
-
-    #doodles .tech {
-        flex-direction: row;
-    }
-
     .tech figure:nth-of-type(2n) {
         margin-left: 15px;
-    }
-
-    .doodleboard article {
-        width: 23%;
     }
 
     .primary-footer ul {
