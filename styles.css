@@ -487,27 +487,6 @@ figure ul:first-of-type {
         margin-bottom: 15px;
     }
 
-    /* .project-card_gifchat {
-        flex-direction: column;
-        padding-top: 60px;
-        padding-bottom: 100px;
-    }
-
-    .project-card-art_gifchat {
-        width: 60%;
-        margin-right: auto;
-        margin-left: auto;
-        margin-bottom: 30px;
-        border: 1px solid var(--gifchat-secondary);
-        box-shadow: -5px -5px var(--gifchat-tertiary);
-    } */
-
-    /* .project-description_gifchat, .gifchat-header {
-        width: 60%;
-        margin-left: auto;
-        margin-right: auto;
-    } */
-
     .project-name_gifchat {
         font-size: 13.2vw;
         margin-bottom: 40px;
@@ -553,11 +532,46 @@ figure ul:first-of-type {
     
 }
 
-/* DESKTOP */
 @media screen and (min-width: 1200px) {
 
     main {
         width: 60%;
+    }
+
+    .project-card_gifchat {
+        padding: 120px;
+    }
+
+    .project-card-art_gifchat {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+
+    .project-name_gifchat {
+        font-size: 12.2vw;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        letter-spacing: -30px;
+        text-indent: -25px;
+    }
+
+    .project-card_apiary {
+        padding: 80px;
+    }
+
+    .project-card_apiary p {
+        font-size: 23px;
+    }
+
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1441px) {
+
+    main {
+        width: 70%;
     }
 
     .primary-nav {
@@ -584,7 +598,7 @@ figure ul:first-of-type {
         padding: 80px;
         flex-direction: row;
         border: 3px solid var(--gifchat-secondary);
-        margin-bottom: 28px;
+        margin-bottom: 58px;
         background: url('./images/noise2.png');
         background-repeat: repeat;
         background-color: var(--gifchat-primary);
@@ -592,8 +606,8 @@ figure ul:first-of-type {
     }
     
     .project-card-art_gifchat {
-        width: 1600px;
-        margin-right: 50px;    
+        width: 180%;
+        margin-right: 80px;    
     }
     
     .project-card-art_gifchat img {
