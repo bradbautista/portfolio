@@ -741,6 +741,10 @@ figure ul:first-of-type {
         height: 5px;
     }
 
+    .project-description_vgcal {
+        line-height: 25px;
+    }
+
     .project-card_gifchat {
         padding: 80px;
         flex-direction: row;
