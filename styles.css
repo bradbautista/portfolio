@@ -5,11 +5,13 @@
     --gifchat-quaternary: rgb(130, 224, 255);
     --gifchat-quinary: lemonchiffon;
     --gifchat-senary: #e4e1f1;
+    --vgcal-primary: crimson;
+    --vgcal-secondary: gainsboro;
   }
 
 * {
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
     list-style-type: none;
 }
 
@@ -28,9 +30,14 @@ strong {
     font-family: inherit;
 }
 
+header {
+    font-family: 'Roboto', sans-serif;
+}
+
 body {
     padding-top: 160px;
     padding-bottom: 100px;
+    font-family: 'Roboto', sans-serif;
 }
 
 main {
@@ -140,7 +147,28 @@ figure ul:first-of-type {
     height: 18px;
     width: 18px;
     margin-left: 10px;
-    margin-right: 10px;
+}
+
+.moment-logo {
+    height: 18px;
+    width: 18px;
+    margin-left: 10px;
+}
+
+.nodemailer-logo {
+    height: 18px;
+    width: 18px;
+    margin-left: 10px;
+}
+
+.fullcalendar-logo {
+    margin-top: 0.5px;
+    margin-left: 10px;
+    width: 18px;
+    height: 18px;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAsBJREFUeAHtW8FqFEEQrers4sUf2ERBEN2D0at39TM8GKN7j4fsQRKJEDAezH2TGEE/Q/yImCAhEQSTzSeIZnfK6tnFTWanxhoh0lPbDQPdVW9m672q7ukdZhC4Ndq7TwFogbtNIHLeZrYhJsxtHwDXT9ZmNzAlT0nHLOEiYuhaDoGeFWFs+2jBEcBN2yQL2TWd+TlfxJ/XO9sLXhH5oS8KoBDJNCRWgOn0KsjFClCIZBoSK8B0ehXkYgUoRDINqYnsEHoO3ArQpXfHr28cibjAHTOLB1cAfswlCMtAMMYXG4s7/IdwvCHCi+7anZfjnmpapts7y0Swko1eXgNquJ0FV3os8BEF6K7e/l5pwpngJT6iAJnzzQ6jAGZTqyQWK0AplFlYrACzqVUSixWgFMosLFaA2dQqicUKUAplFhYrwGxqlcRiBSiFMguLFWA2tUpiY4+Jlef9VxgR4fzX/hNIaJ5fb7s1+HHaA4dbW9enNhEx98m2Jsjgp0DrGzUeH/Y/UkIdZnmXgC4PDu6zzfs8RkM2DxO0AD7zp6f9D/wi17284FMb+3q/+u89VsQUOIIWIC37IvJDYlwR91NsAVHJFbQAgzkvhZ6xp+tDxqYYhi3AnwVPwaQUdnS9wAUYBXpRvcAF4FudupXBji4atgB8nx+F+pdeGeyZSwUtgN/kAOKnM/HmdxmTYvO9hdagBfA7vHp96mGhCEzeY/51Nxj8VrhzDU94k/PgorbCwQvg63eY3Q3u+uNce3tuVH4Q9BQoT6f8GVGA8prZOiNWgJTP6eefr0q+KtolPnIF9GiuikTFmAU+4m2Qn74szbR3E6zVt49Wm8fihQN3pG+K4s9HCSRLeaGKb4rmgS3aHO8y/Le0k9mYu18D+EPiiW37LACuTyp93mK/cf4TcuCvqHkqfJmI6eCnfMrVtbqvZjd/Ayj3u2zl1YldAAAAAElFTkSuQmCC) no-repeat;
+    background-size: auto;
+    background-size: contain;
 }
 
 .fa-node-js {
@@ -183,6 +211,7 @@ figure ul:first-of-type {
     background-color: white;
     display: block;
     position: fixed;
+    z-index: 11;
     top: 0;
     width: 100%;
     padding: 15px;
@@ -222,6 +251,98 @@ figure ul:first-of-type {
 .project-description {
     width: 100%;
 }
+
+/* ****************************************
+*******************************************
+******************************************* */
+
+.project-card_vgcal {
+    border: 1px solid var(--vgcal-secondary);
+    margin-bottom: 30px;
+    flex-direction: column;
+    background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgo8cmVjdCB3aWR0aD0iNSIgaGVpZ2h0PSI1IiBmaWxsPSIjZmZmIj48L3JlY3Q+CjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNjY2MiPjwvcmVjdD4KPC9zdmc+");
+    font-family: 'Roboto Slab', serif;
+}
+
+.vgcal-header {
+    padding-left: 30px;
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: var(--vgcal-primary);
+    font-family: 'Roboto Slab', serif;
+}
+
+.vgcal-header aside {
+    color: white;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.project-name_vgcal {
+    font-size: 40px;
+}
+
+.project-name_vgcal a {
+    color: white;
+}
+
+.project-card-body_vgcal {
+    padding: 30px;
+}
+
+.project-card-art_vgcal {
+    position: relative;
+    border-left: 1px solid var(--vgcal-secondary);
+    border-right: 1px solid var(--vgcal-secondary);
+    border-top: 1px solid var(--vgcal-secondary);
+    z-index: 0;
+}
+
+.project-card-art_vgcal::after {
+    content: ' ';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    background-color: var(--vgcal-primary);
+    width: 100%;
+}
+
+.project-description_vgcal {
+    border: 1px solid var(--vgcal-secondary);
+    padding-top: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 25px;
+    background-color: white;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.project-description_vgcal p:first-child {
+    margin-top: 0px;
+    font-size: 22px;
+    line-height: 25px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.tech {
+    font-family: 'Roboto', sans-serif;
+}
+
+.tech ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: flex-start;
+}
+
+.tech li {
+    margin-bottom: 5px;
+}
+
+
 
 /* ****************************************
 *******************************************
@@ -281,6 +402,14 @@ figure ul:first-of-type {
     font-size: 20px;
     margin-top: 5px;
     font-family: 'Courier';
+}
+
+.postgres-logo-gifchat {
+    margin-right: 10px;
+    margin-top: 0.5px;
+    height: 18px;
+    width: 18px;
+    margin-left: 10px;
 }
 
 /* ****************************************
@@ -478,6 +607,20 @@ figure ul:first-of-type {
         padding-left: 0;
     }
 
+    .project-card_vgcal {
+        margin-bottom: 50px;
+    }
+
+    .project-card-body_vgcal {
+        padding: 40px;
+    }
+
+    .project-description_vgcal {
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 35px;
+    }
+
     .project-card_gifchat {
         padding: 80px;
         margin-bottom: 58px;
@@ -594,6 +737,10 @@ figure ul:first-of-type {
         margin-top: 30px;
     }
 
+    .project-card-art_vgcal::after {
+        height: 5px;
+    }
+
     .project-card_gifchat {
         padding: 80px;
         flex-direction: row;
@@ -649,7 +796,6 @@ figure ul:first-of-type {
         font-family: 'Courier';
     }
     
-
     .project-card_apiary {
         flex-direction: row;
         justify-content: space-between;
