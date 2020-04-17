@@ -336,12 +336,20 @@ figure ul:first-of-type {
     display: flex;
     flex-wrap: wrap;
     justify-items: flex-start;
+    /* align-items: center; */
 }
 
 .tech li {
     margin-bottom: 5px;
 }
 
+.tech .fa-github, .fa-desktop {
+    margin-right: 5px;
+}
+
+.tech .fa-server {
+    margin-right: 10px;
+}
 
 
 /* ****************************************
