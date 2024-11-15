@@ -285,9 +285,6 @@ figure ul:first-of-type {
 
 .project-name_vgcal {
     font-size: 40px;
-}
-
-.project-name_vgcal a {
     color: white;
 }
 
@@ -391,13 +388,9 @@ figure ul:first-of-type {
     margin-top: 20px;
     text-align: left;
     letter-spacing: -12px;
-}
-
-.project-name_gifchat a {
     font-family: 'Bungee Hairline';
     color: var(--gifchat-secondary);
     text-shadow: 1.5px 1.5px 0 var(--gifchat-primary), 3.5px 3.5px 0 var(--gifchat-tertiary);
-    margin: 0;
     padding: 0;
 }
 
