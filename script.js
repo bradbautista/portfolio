@@ -31,4 +31,31 @@ function hideNav() {
 
 }
 
+function showSparkles() {
+    const container = document.querySelector('.sparkle-container');
+    const sparkleInterval = 200;
+
+    function createSparkle() {
+        const rect = container.getBoundingClientRect();
+        const sparkle = document.createElement('div');
+        sparkle.classList.add('sparkle');
+
+        const x = Math.random() * rect.width;
+        const y = Math.random() * rect.height;
+
+        sparkle.style.left = `${x}px`;
+        sparkle.style.top = `${y}px`;
+
+        container.appendChild(sparkle);
+
+        sparkle.addEventListener('animationend', () => {
+            sparkle.remove();
+        });
+    }
+
+    setInterval(createSparkle, sparkleInterval);
+
+}
+
 $(hideNav);
+$(showSparkles);
